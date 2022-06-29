@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class SwitchController : MonoBehaviour
 { 
-    public GameObject[] ollPlayers;
+    public GameObject Player1;
+    public GameObject Player2;
+    public GameObject Player3;
     private int randomController;
+    
     
  
    
@@ -19,17 +22,29 @@ public class SwitchController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.P))
+        randomController = Random.Range(0, 3);
+
+        if (Input.GetKeyDown(KeyCode.P) && randomController == 1)
         {
-            randomController = Random.Range(0, ollPlayers.Length);
-            randomSpawn();
-            
+            Instantiate(Player1, transform.position, Quaternion.identity);   
+            Destroy(Player2);
+            Destroy(Player3);
+           
+        }
+         if (Input.GetKeyDown(KeyCode.P) && randomController == 2)
+        {
+            Instantiate(Player2, transform.position, Quaternion.identity);   
+            Destroy(Player1);
+            Destroy(Player3);
            
         }       
-        
-    void randomSpawn()
+         if (Input.GetKeyDown(KeyCode.P) && randomController == 3)
         {
-            Instantiate(ollPlayers[randomController], transform.position, Quaternion.identity);   
-        }
+            Instantiate(Player3, transform.position, Quaternion.identity);   
+            Destroy(Player2);
+            Destroy(Player1);
+           
+        }       
+    
     }
 }
