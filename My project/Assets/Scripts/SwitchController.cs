@@ -22,23 +22,23 @@ public class SwitchController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        randomController = Random.Range(0, 3);
+        
 
-        if (Input.GetKeyDown(KeyCode.P) && randomController == 1)
+        if (Input.GetKeyDown(KeyCode.P))
         {
             Instantiate(Player1, transform.position, Quaternion.identity);   
             Destroy(Player2);
             Destroy(Player3);
            
         }
-         if (Input.GetKeyDown(KeyCode.P) && randomController == 2)
+         if (Input.GetKeyDown(KeyCode.O))
         {
             Instantiate(Player2, transform.position, Quaternion.identity);   
             Destroy(Player1);
             Destroy(Player3);
            
         }       
-         if (Input.GetKeyDown(KeyCode.P) && randomController == 3)
+         if (Input.GetKeyDown(KeyCode.I))
         {
             Instantiate(Player3, transform.position, Quaternion.identity);   
             Destroy(Player2);

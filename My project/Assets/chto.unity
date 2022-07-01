@@ -382,13 +382,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44353d144d5465a49a81aec887849565, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player1: {fileID: 8318938022858048557, guid: a588923c859aeae448c79140a42524c9, type: 3}
-  player2: {fileID: 7843425788754221229, guid: 6e929b703a8f64c44a37d561541306df, type: 3}
-  player3: {fileID: 0}
-  ollPlayers:
-  - {fileID: 8318938022858048557, guid: a588923c859aeae448c79140a42524c9, type: 3}
-  - {fileID: 7843425788754221229, guid: 6e929b703a8f64c44a37d561541306df, type: 3}
-  - {fileID: 7308960457518586826, guid: 032a7d5809a827c4bb3d4e4757efd9b5, type: 3}
+  Player1: {fileID: 8318938022858048557, guid: a588923c859aeae448c79140a42524c9, type: 3}
+  Player2: {fileID: 7843425788754221229, guid: 6e929b703a8f64c44a37d561541306df, type: 3}
+  Player3: {fileID: 7308960457518586826, guid: 032a7d5809a827c4bb3d4e4757efd9b5, type: 3}
 --- !u!1 &1118220372
 GameObject:
   m_ObjectHideFlags: 0
