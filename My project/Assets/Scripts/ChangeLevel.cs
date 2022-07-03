@@ -13,12 +13,5 @@ public class ChangeLevel : MonoBehaviour
         SceneManager.LoadScene(numberScenes);
     }
 
-    void  Update()
-    {
-        if(Input.GetKeyDown(KeyCode.Escape))
-        {
-            SceneManager.LoadScene(0);
-        }
-        
-    }
+   
 }
