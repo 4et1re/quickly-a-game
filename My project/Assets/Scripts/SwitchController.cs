@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SwitchController : MonoBehaviour
 { 
@@ -45,6 +46,15 @@ public class SwitchController : MonoBehaviour
             Destroy(Player1);
            
         }       
+
+         
+    
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene(0);
+        }
+        
+    
     
     }
 }
